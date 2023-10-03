@@ -3,13 +3,12 @@
     
     <head>
         <style>
-            .navbar {                        /* Add a dark background color with a little bit see-through */
+            .navbar {                       
             margin-bottom: 0;
             background-color: #b84a4a;
             border: 0;
             font-size: 11px !important;
             letter-spacing: 4px;
-            opacity: 0.9;
             }
             .navbar li a, .navbar .navbar-brand {            /* Add a gray color to all navbar links */
             color: #d5d5d5 !important;
@@ -23,8 +22,6 @@
             background-color:#cc4f4f !important;
             }
             .carousel-inner img {
-                -webkit-filter: grayscale(90%);
-                filter: grayscale(90%); /* make all photos black and white */ 
                 width: 100%; /* Set width to 100% */
                 margin: auto;
             }
@@ -32,31 +29,50 @@
                 color: #fff !important;
             }
             .redtext {
-                color:red;
+                color:rgb(170, 19, 19);
                 font-family:Arial, Helvetica, sans-serif;
             }
             .bg-1{
                 background-color: rgb(84, 183, 84);
                 color: #fff;
                 text-align: center;
+                padding-left: 200px;
+                padding-right: 2100px;
             }
             .blacktext {
                 color:black;
-                font-family: Arial, Helvetica, sans-serif;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 font-size: 17px;
             }
             .center{
                 text-align: center;
             }
-            .bg-2 {
-                margin-left:100px;
-                margin-right:100px;
+            .margin {
+                margin-left:150px;
+                margin-right:150px;
+            }
+            .bg-3{
+                background-color: #b84a4a;
+                color:#fff;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .padding{
+              padding: 100px;
+            }
+            .spacing{
+              line-height: 1.0;
+            }
+            .spacingbig{
+              line-height: 4.0;
             }
        </style>
         <title>Oundle Choral Society</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
+        <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
         <nav class="navbar navbar-fixed-top">
             <div class="container-fluid">
             <div class="navbar-header">
@@ -65,14 +81,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                        
                 </button>
-                <a class="navbar-brand" href="index.html">Oundle Choral Society</a>
+                <a class="navbar-brand" href="#myPage">Oundle Choral Society</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#myPage">About Us</a></li>
-                    <li><a href="#band">Concerts & Events</a></li>
-                    <li><a href="#tour">Members</a></li>
-                    <li><a href="#contact">Music</a></li>
+                    <li><a href="#aboutU">About Us</a></li>
+                    <li><a href="#CnE">Concerts & Events</a></li>
+                    <li><a href="#Membe">Members</a></li>
+                    <li><a href="#Musi">Music</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
@@ -84,14 +100,14 @@
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <li data-target="myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="myCarousel" data-slide-to="1"></li>
-              <li data-target="myCarousel" data-slide-to="2"></li>
-              <li data-target="myCarousel" data-slide-to="3"></li>
-              <li data-target="myCarousel" data-slide-to="4"></li>
-              <li data-target="myCarousel" data-slide-to="5"></li>
-              <li data-target="myCarousel" data-slide-to="6"></li>
-              <li data-target="myCarousel" data-slide-to="7"></li>
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+              <li data-target="#myCarousel" data-slide-to="6"></li>
+              <li data-target="#myCarousel" data-slide-to="7"></li>
             </ol>
           
             <div class="carousel-inner" role="listbox">
@@ -130,23 +146,159 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-        
-         <h2 class="redtext">New term starts Monday 4th September - new members welcome!</h2>
-        <div class="container-fluid bg-2">
-            <div class="container-fluid bg-1">
-                <h2>Next concert</h2>
-                <h2>Songs from the Shows</h2>
-                <h2>Saturday 16th December 7:30pm</h2>
-            </div>
-            <h1 class="redtext center">Welcome to the Oundle & District Choral Society</h1>
-            <div class="blacktext">
-                <p>We are a mixed voice choir who have been in existence for over 100 years. We draw our membership from a fairly wide rural area and currently have approximately seventy voices who meet for rehearsals <b>every Monday during term time</b> </p>
-                <p>Although we are an independent choral society, we have close links with Oundle School with whom we often perform and who regularly support our concerts.<b> Our rehearsals are held in Laxton Junior School Hall, East Road, Oundle, PE8 4BX, from 7.30pm until 9.30pm.</b></p>
-                <P>There is no requirement to audition and all singers are made welcome no matter what skill level you have. We are grateful to Oundle Town Council for their continuing financial support but, much like most societies, we are a registered charity and are obliged to charge a subscription fee. However, don’t let that stop you from coming along to see if you like us!</P>
-                <p>If you are interested in joining our society please contact us for more information by telephoning/emailing using the details below.            </p>
-                <p>Registered charity number: 1098947            </p>
-            </div>
+        <div id="aboutU" class="container">
+          <marquee><h2 class="redtext">New term starts Monday 4th September - new members welcome!</h2></marquee>
+          <h1 class="redtext center margin">Welcome to the Oundle & District Choral Society</h1>
+          <div class="blacktext margin">
+                  <p>We are a mixed voice choir who have been in existence for over 100 years. We draw our membership from a fairly wide rural area and currently have approximately seventy voices who meet for rehearsals <b>every Monday during term time</b> </p>
+                  <p>Although we are an independent choral society, we have close links with Oundle School with whom we often perform and who regularly support our concerts.<b> Our rehearsals are held in Laxton Junior School Hall, East Road, Oundle, PE8 4BX, from 7.30pm until 9.30pm.</b></p>
+                  <P>There is no requirement to audition and all singers are made welcome no matter what skill level you have. We are grateful to Oundle Town Council for their continuing financial support but, much like most societies, we are a registered charity and are obliged to charge a subscription fee. However, don’t let that stop you from coming along to see if you like us!</P>
+                  <p>If you are interested in joining our society please contact us for more information by telephoning/emailing using the details below.            </p>
+                  <p>Registered charity number: 1098947            </p>
+          </div>
         </div>
+
+        <div id="CnE" class="container-fluid">
+          <div class="container-fluid padding bg-3">
+              <h1 class="center">Previous Concerts and Events</h1>
+              <div class="row">
+                  <div class="col-sm-3">
+                      <img src="ODCS Christmas 22 Poster.png" height="500px" width="350px" alt="Oundle choral society">
+                  </div>
+                  <div class="col-sm-3">
+                    <img src="Easter22Poster.jpg"  height="500px" width="350px" alt="Oundle choral society">
+                  </div>
+                  <div class="col-sm-3">
+                    <img src="ODCS2021poster.png"  height="500px" width="350px" alt="Oundle choral society">
+                  </div>
+                  <div class="col-sm-3">
+                      <img src="mmm.jpg"  height="500px" width="350px" alt="Oundle choral society">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div id="Membe" class="container">
+          <div class="container-fluid margin">
+              <div class="row">
+                  <div class="col-sm-4 center redtext">
+                      <h3>Accompanist</h3>
+                      <h2>Elizabeth Arkell</h2>
+                      <img src="Elizabeth.png" height="350px" width="300px" alt="elizabeth">
+                      <button style="background-color: rgb(69, 185, 185); color:#fff" onclick="bio()">Bio</button>
+                  </div>
+                  <div class="col-sm-4 center">
+                      <h1 class="redtext">Members</h1>
+                      <div class="blacktext">
+                          <p>Chairman : Jane Piercy-Hughes</p>
+                          <p>Treasurers: John Davies</p>
+                          <p>Secretary: Janet Ollerenshaw</p>
+                          <p>Legal: John Davies</p>
+                          <p>Website: Tessa Leuchars</p>
+                      </div>
+                  </div>
+                  <div class="col-sm-4 redtext center">
+                      <h3>Musical Director & Conductor</h3>
+                      <h2>Quentin Thomas</h2>
+                      <img src="Quentin.png" height="350px" width="300px" alt="quentin">             <!--add butons-->
+                  </div>
+              </div>
+          </div>
+          <div class="container-fluid">
+            <h1 class="redtext center margin">Why we enjoy singing with ODCS</h1>
+            <div class="blacktext padding spacing">
+              <h3>"I enjoy singing with the choir because the practicing is pleasingly challenging with lovely results when it all comes together. And Quentin is a charismatic, humorous and talented leader."</h3>
+              <h4 style="color:rgb(78, 78, 78)">- Anne</h4>
+              <h3>"ODCS is the most friendly, relaxed and enjoyable choral society I have ever belonged to."</h3>
+              <h4 style="color:rgb(78, 78, 78)">- Trisha</h4>
+              <h3>"I love the thrill of singing in 4-part harmony. It gives me that tingling feeling!"</h3>
+              <h4 style="color:rgb(78, 78, 78)">- Clare</h4>
+              <h3>" Singing is the perfect form of exercise and relaxation, focussing your mind, whatever the day has thrown at you!"</h3>
+              <h4 style="color:rgb(78, 78, 78)">- Tessa</h4>
+            </div>
+          </div>
+        </div>   
+
+        <div id="Musi" class="container-fluid bg-3">
+          <div class="container">
+            <h1>Music</h1>
+            <div style="font-family: 'Times New Roman', Times, serif; line-height: 2.0px;">
+              <h4>Spring 2023 - Karl Jenkins' The Armed Man and Rutter's Requiem</h4>
+              <h4>Autumn 2022 - Magnificat in D Major - J.S Bach and Mass in G Major - Franz Schubert</h4>
+              <h4>Spring 2022 - Dvorak's Mass in D Minor, Vaughan Williams' Five Mystical Songs and Arensen's Eja Mater</h4>
+              <h4>Autumn 2019 - Britten - St Nicolas, Chilcott - Time of Snow Mid Winter, Whitacre - Lux Aurumque, Rutter - Nativity, Candlelight & Shepherds Pipe Carols.</h4>
+              <h4>Spring 2019 - Vivaldi GLORIA & Tippett 'Five Spirituals</h4>
+              <h4>Autumn 2018 - G.F. Handel - Messiah Part 1</h4>
+              <h4>Spring 2018 - Gioacchino Rossini’s - Petite Messe Solennelle</h4>
+              <h4>Autumn 2017 - Benjamin Britten's - A Ceremony of Carols</h4>
+              <h4>Spring 2017 - Handel’s Israel in Egypt - A joint concert with Uppingham Choral Society and the Bardi Orchestra on Saturday 8th April 2017 in Uppingham</h4>
+              <h4>Spring 2016 - Creation by F. J. Haydn</h4>
+              <h4>Spring 2015 - Mass in C Minor K.427 by Mozart</h4>
+              <h4>Spring 2014 - Now is the Month of Maying - A Concert for May Day!</h4>
+              <h4>Autumn 2013 - The Nelson Mass by F. J. Haydn</h4>
+              <h4>Spring 2013 - Messe Solennelle by Louis Vierne (Oundle School Chapel)</h4>
+              <h4>Autumn 2012 - Messiah by G F Handel</h4>
+              <h4>Spring 2012 - The Music Makers by Edward Elgar (Peterborough Cathedral with Oundle School)</h4>
+              <h4>Autumn 2011 - Messa di Gloria by Giacomo Puccini</h4>
+              <h4>Spring 2011- Requiem by W. A. Mozart</h4>
+            </div>
+          </div>
+        </div>
+
+        <div id="contact" class="container padding">
+          <div class="container-fluid center redtext">
+            <h1>Contact Us</h1>
+            <br>
+            <br>
+            <h4>Jane Piercy-Hughes - Chairman</h4>
+            <br>
+            <h4>Janet Ollerenshaw - Secretary or Phone 07979332744</h4>
+            <br>
+            <h4>Tessa Leuchars - Website</h4>
+            <br>
+            <button style="background-color: rgb(69, 185, 185); color:#fff">Privacy Policy</button>
+            <br>
+            <img src="ocsred.png">
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <script>
+          $(document).ready(function(){
+                      // Initialize Tooltip
+            $('[data-toggle="tooltip"]').tooltip();
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+          
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+          
+              // Prevent default anchor click behavior
+              event.preventDefault();
+          
+              // Store hash
+              var hash = this.hash;
+          
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 900, function(){
+          
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+                });
+              } // End if
+            });
+          })
+          </script>
     </body>
 
 
